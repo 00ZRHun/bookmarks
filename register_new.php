@@ -25,6 +25,20 @@
     } else if((strlen($passwd) < 6) || (strlen($passwd) > 16)) {
         echo "Your password must be between 6 and 16 character - Please go back and try again";
     } 
+
+    $conn = new mysqli('localhost', 'root', '', 'bookmarks');
+    if($conn->connect_error)    die("Fatal Error");
+    else                        echo "Good to GO" ;
+
+    $query = "SELECT * FROM user WHERE username='$username'";
+    $result = $conn->query($query);
+    if(!$result)    die('Could not execute query');
+    else            echo "Good to GO" ;
+
+    if($result->num_rows>0) {
+        echo "That username is taken - go back and choose another username";
+    }
+
   
     
 ?>

@@ -11,7 +11,7 @@
         </tr>
         <tr>
             <td>Preferred Username:<br />(max 16 chars):</td>
-            <td valign="top"><input type="password" name="username"
+            <td valign="top"><input type="text" name="username"
                 size="16" maxlength="16"></td>
         </tr>
         <tr>
