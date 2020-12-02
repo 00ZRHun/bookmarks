@@ -1,8 +1,7 @@
 <?php
-    $hn = "localhost";
-    /* $un = "username";
-    $pw = "password"; */
-    $un = "root";
-    $pw = "";
-    $db = "bookmarks";
+    require_once "output_functions.php";
+    do_html_header();
+    display_site_info();
+    display_login_form();
+    do_html_footer(); 
 ?>

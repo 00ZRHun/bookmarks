@@ -1,6 +1,6 @@
 <?php
     require_once("output_functions.php");
-    do_html_header();
+    do_html_header("User Registration");
 ?>
 
     <form method="post" action="register_new.php">
